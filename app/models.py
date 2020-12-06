@@ -53,8 +53,8 @@ class Upvote(db.Model):
     pitch_id = db.Column(db.Integer, db.ForeignKey('pitch.id'))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
-    # pitch = db.relationship('Pitch', backref = 'upvotes', lazy = True)
-    # user = db.relationship('User', backref = 'upvotes', lazy = True)
+    pitch = db.relationship('Pitch', backref = 'upvotes', lazy = True)
+    user = db.relationship('User', backref = 'upvotes', lazy = True)
 
 
 class Downvote(db.Model):
