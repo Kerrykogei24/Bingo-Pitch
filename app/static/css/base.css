@@ -5,19 +5,19 @@ a{
     color: initial;
 }
 a:hover{
-    color: #5df212;
+    color: #0cd8a5;
     text-decoration: none;
 }
 .join-btn{
-    background-color: #5df212;
+    background-color: #0cd8a5;
     color: white;
-    border-color: #5df212;
+    border-color: #0cd8a5;
     font-size: 16px;
 }
 .pitch-btn{
-    background-color: #5df212;
+    background-color: #0cd8a5;
     color: white;
-    border-color: #5df212;
+    border-color: #0cd8a5;
     font-size: 16px;
 
 }

@@ -46,11 +46,11 @@ def register():
             db.session.add(new_user)
             db.session.commit()
 
-            email_obj = {
-                'email_subject': 'Welcome to Bingo Pitch',
-                'email_body': f'We are glad you are here.{first} ',
-            }
-            send_email(email_obj, email)
+            # email_obj = {
+            #     'email_subject': 'Welcome to Bingo Pitch',
+            #     'email_body': f'We are glad you are here.{first} ',
+            # }
+            # send_email(email_obj, email)
             return redirect(url_for('auth.login'))
 
     return render_template('auth/register.html', register_form = form)
