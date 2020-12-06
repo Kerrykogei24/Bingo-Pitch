@@ -1,4 +1,4 @@
-# Bingo Pitch
+<!-- # Bingo Pitch
 
 This site allows users to upload one minute pitches and view, upvote and downvote other people's one minute pitches across different categories.
 
@@ -60,4 +60,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Copyright (c) {2020} **Sheilla Njoroge**
+Copyright (c) {2020} **Sheilla Njoroge** -->
