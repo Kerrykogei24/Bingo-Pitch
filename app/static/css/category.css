@@ -15,11 +15,11 @@
     width: auto;
 }
 .pitch-writer{
-    color: gray;
+    color: black;
 }
 .pitch:hover{
     border: 1px solid #0cd8a5;
-    background-color: #fcfcfc;
+    background-color: #e49f9f;
     z-index: 5;
 }
 a:hover{
