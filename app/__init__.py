@@ -41,3 +41,4 @@ def create_app(configuration):
     app.register_blueprint(profile_blueprint)
     
     return app
+    
