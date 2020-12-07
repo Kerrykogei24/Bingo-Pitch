@@ -18,7 +18,7 @@
     color: gray;
 }
 .pitch:hover{
-    border: 1px solid #5df212;
+    border: 1px solid #0cd8a5;
     background-color: #fcfcfc;
     z-index: 5;
 }
