@@ -1,6 +1,6 @@
 import os
 class Config:
-     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:zayheim01@localhost/bingopitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:zayheim01@localhost/bingopitch'
     SECRET_KEY='thisismysupersecretkey'
     MAIL_SERVER : 'smtp.googlemail.com'
     MAIL_PORT : 587
@@ -11,7 +11,7 @@ class Config:
     MAIL_DEFAULT_SENDER : os.environ.get('MAIL_USERNAME')
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI= os.environ.get('DATABASE_URI')
+    # SQLALCHEMY_DATABASE_URI= os.environ.get('DATABASE_URI')
     DEBUG=True
    
 
