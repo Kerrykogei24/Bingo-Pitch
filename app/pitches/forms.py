@@ -3,9 +3,9 @@ from wtforms import SelectField, TextAreaField, SubmitField
 from wtforms.validators import Length, Required
 
 class PitchForm(FlaskForm):
-    categories = SelectField('Category', coerce=int)
+    # categories = SelectField('Category', coerce=int)
     message = TextAreaField('Make yoour pitch', validators = [Required() ,Length(min = 20, max = 1000, message = 'Check the length of your pitch')])
-    categories = SelectField('type', choices=('categories'))
+    categories = SelectField('type', choices=[('categories', 'Business','Dating','Comedy','Interview')])
     submit = SubmitField('Submit')
 
 class CommentForm(FlaskForm):

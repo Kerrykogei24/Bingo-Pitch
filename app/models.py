@@ -4,6 +4,7 @@ from flask_login import UserMixin
 from . import db
 
 class User(UserMixin,db.Model):
+    __tablename__= 'user'
     id = db.Column(db.Integer, primary_key=True)
     f_name = db.Column(db.String(255), nullable = False)
     l_name = db.Column(db.String(255), nullable = False)
@@ -27,6 +28,7 @@ class User(UserMixin,db.Model):
         return '<User %r>' % self.f_name
 
 class Pitch(db.Model):
+    __tablename__= 'pitch'
     id = db.Column(db.Integer, primary_key=True)
     message = db.Column(db.String(1000), nullable = False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
@@ -41,6 +43,7 @@ class Pitch(db.Model):
 
 
 class Category(db.Model):
+    __tablename__= 'category'
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(255))
 
@@ -49,6 +52,7 @@ class Category(db.Model):
         return '<Category %r>' % self.name
 
 class Upvote(db.Model):
+    __tablename__= 'upvote'
     id = db.Column(db.Integer, primary_key = True)
     pitch_id = db.Column(db.Integer, db.ForeignKey('pitch.id'))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
@@ -58,6 +62,7 @@ class Upvote(db.Model):
 
 
 class Downvote(db.Model):
+    __tablename__= 'downvote'
     id = db.Column(db.Integer, primary_key = True)
     pitch_id = db.Column(db.Integer, db.ForeignKey('pitch.id'))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
@@ -67,6 +72,7 @@ class Downvote(db.Model):
 
    
 class Comment(db.Model):
+    __tablename__= 'comment'
     id = db.Column(db.Integer, primary_key = True)
     pitch_id = db.Column(db.Integer, db.ForeignKey('pitch.id'))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))

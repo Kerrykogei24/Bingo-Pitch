@@ -1,6 +1,6 @@
 import os
 class Config:
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:zayheim01@localhost/bingopitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:zayheim01@localhost/bingo'
     SECRET_KEY='thisismysupersecretkey'
     MAIL_SERVER : 'smtp.googlemail.com'
     MAIL_PORT : 587
